@@ -7,7 +7,7 @@ from PIL import Image
 
 
 def load_model():
-  model=tf.keras.models.load_model('transfer_l_1.hdf5')
+  model=tf.keras.models.load_model('./transfer_l_1.hdf5')
   return model
 with st.spinner('Model is being loaded..'):
   model=load_model()
